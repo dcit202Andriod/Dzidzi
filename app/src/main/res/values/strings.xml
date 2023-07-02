@@ -1,0 +1,150 @@
+<resources>
+<string name="app_name">Dzidzi</string>
+<!-- TODO: Remove or change this placeholder text -->
+<string name="hello_blank_fragment">Hello blank fragment</string>
+
+<string name="rice_water_name">Rice Water</string>
+<string name="rice_water_ingredients">
+\u2022 1 cup rice\n
+\u2022 5 1/2 -6 cups water\n
+\u2022 1 teaspoon salt\n
+\u2022 1/2 teaspoon nutmeg\n
+\u2022 honey/ sugar any sweetener of choice\n
+\u2022 powdered or evaporated milk to serve\n
+\u2022 Dash of nutmeg for garnish optional\n
+</string>
+<string name="rice_water_instructions">
+1. Wash rice and pour in a large saucepan with 5 cupts of water and put on a high heat.\n
+2. Boil for about 20 minutes till the rice has soaked the water and soft. Add the salt and the other one cup water if needed. Using a ladle, beat the rice against the saucepan to form a smooth pudding of consistency.\n
+3. Add the nutmeg and sweetner of choice let it simmer for about five minutes.\n
+4. Serve with milk of choice and sprinkle with tiny dash of nutmeg for garnish.\n
+</string>
+
+<string name="waakye_name">Waakye</string>
+<string name="waakye_ingredients">
+\u2022 1 cup dried black eyed beans/ peas soaked overnight\n
+\u2022 2 cups rice\n
+\u2022 8-10 dried millet stalk leaves\n
+\u2022 salt as required\n
+</string>
+<string name="waakye_instructions">
+1. Pour over a litre of water into a saucepan together with the millet leaf stalks. Put on a high heat to boil. The millet stalk leaves will start omitting its colour and the water will start turning into a deep wine colour.\n
+2.  Rinse the saoked beans and add to the boiling water. Cover and let it cook till tender. Mean while rinse the rice till the water is cleared. Add the washed rice into the saucepan together with salt to taste. (You might need to add more water.) Add water if needed. Stir and cover tightly.\n
+3. Do not remove the millet stalk leaves. When the rice boils over, reduce heat and simmer till the water is absorbed and the rice is cooked through. Rent for three to five minutes, remove millet stalk leaves and fluff with a fork.\n
+</string>
+
+<string name="omo_tuo_name">Omo Tuo</string>
+<string name="omo_tuo_ingredients">
+\u2022 1 cup rice\n
+\u2022 3-4 cups water or as required\n
+\u2022 Salt as required\n
+</string>
+<string name="omo_tuo_instructions">
+1. Rinse rice and put in a medium cooking pot. Add water and salt to taste.\n
+2. Put rice on high and bring to ball. When rice boils over, reduce heat to medium and let cook till all water is absorbed and very soft when pressed between your fingers. Turn off heat.\n
+3. With the rice in the cooking pot, use a wooden ladle to beat or mash the rice against the sides of the pot for it to be glutinous. Divide the glutinous rice into balls according to required serving. Serve with soup of choice.\n
+</string>
+
+<string name="wheat_porridge_name">Wheat Porridge</string>
+<string name="wheat_porridge_ingredients">
+\u2022 Wheat Porridge\n
+\u2022 Ingredients\n
+\u2022 1 cup of whole wheat\n
+\u2022 6 cups of water\n
+\u2022 Salt (to taste)\n
+\u2022 Milk (optional)\n
+\u2022 Sugar (optional)\n
+</string>
+<string name="wheat_porridge_instructions">
+1. Boil two cups of water in a saucepan.\n
+2. Pour in the wheat.\n
+3. Cover it with the lid and remove it from the heat source.\n
+4. Leave it to soak for about six hours. After that, drain the water from the wheat using a colander.\n
+5. Add the wheat soaked early on with the four cups of water left and boil for about 15 minutes. Let it be on medium heat.\n
+6. After 15 minutes, turn off the fire and wait till the wheat berries open up.\n
+7. Serve. You can add sugar and milk to your taste.\n
+</string>
+
+<string name="jollof_rice_name">Jollof Rice</string>
+<string name="jollof_rice_ingredients">
+\u2022 2 large yellow onions, roughly chopped/n
+\u2022 ⅓ cup vegetable oil (80 mL), plus 2 tablespoons, divided\n
+\u2022 14 of diced tomato (395 g), 2 cans\n
+\u2022 6 oz tomato paste (170 g), 1 can\n
+\u2022 1 habanero pepper\n
+\u2022 2 teaspoons curry powder\n
+\u2022 1 teaspoon garlic powder\n
+\u2022 1 teaspoon ground ginger\n
+\u2022 ½ teaspoon mixed dried herbs\n
+\u2022 3 chicken bouillon cubes, crushed\n
+\u2022 2 ½ cups long grain rice (500 g), rinsed\n
+\u2022 1 cup frozen mixed vegetable (150 g)\n
+\u2022 1 ½ cups water (360 mL)\n
+</string>
+<string name="jollof_rice_instructions">
+1. Add onions and 2 tablespoons of oil to a blender and pulse until smooth. Transfer to a medium bowl.\n
+2. Add the diced tomatoes, tomato paste, and habanero pepper to the blender, and pulse until smooth. Transfer to a separate medium bowl.\n
+3. Heat the remaining ⅓ cup (80 ml) of oil in a large, heavy-bottomed pot over medium heat.\n
+4. Once the oil is shimmering, add the onion puree and cook until the water has cooked out and the puree is starting to brown, about 10 minutes.\n
+5. Stir in the tomato puree and add the curry powder, garlic powder, ginger, dried herbs, and crushed bouillon cubes. Cook for 20-30 minutes, stirring occasionally, until the stew has reduced by half and is deep red in color.\n
+6. Add the rice, mixed vegetables, and water. Bring to a boil, then reduce the heat to low and cover the pot with foil and a lid. Simmer for another 30 minutes, until the rice is cooked through and the liquid is absorbed.\n
+7. Enjoy!
+</string>
+
+<string name="goat_light_soup_name">Goat Light Soup</string>
+<string name="goat_light_soup_ingredients">
+\u2022 1 Pound of Goat Meat\n
+\u2022 2 Medium Tomatoes\n
+\u2022 Medium Garden Eggs\n
+\u2022 Red Scotch Bonnet Peppers\n
+\u2022 Medium Onion\n
+\u2022 Tbsp Tomato Paste\n
+\u2022 Tbsp Ginger and Garlic Paste\n
+\u2022 ½ An Onion Diced\n
+\u2022 2 Cubes Beef Seasoning\n
+\u2022 Pinch of salt\n
+</string>
+<string name="goat_light_soup_instructions">
+1. Pour goat meat into a saucepan over medium heat, add ginger and garlic paste.\n
+2. Add beef seasoning, diced onion, salt, water, stir and let cook for 15 minutes.\n
+3. Add tomatoes, onion, red chilli, garden eggs, stir and let cook until it\'s soft and tender.\n
+4. Take out and blend.\n
+5. Add tomato paste, stir and let simmer for 2 minutes.\n
+6. Strain the blended mixture into the saucepan, stir and let simmer for 15 - 20 minutes.\n
+7. Adjust seasoning to your taste.\n
+8. Ready to serve.\n
+</string>
+
+<string name="oat_name">Oat</string>
+<string name="oat_ingredients">
+\u2022 1/2 cup instant oats\n
+\u2022 1 cup water or milk\n
+\u2022 Pinch of salt\n
+\u2022 Optional: sweetener, fruit, nuts, or other toppings\n
+</string>
+<string name="oat_instructions">
+1. In a microwave-safe bowl, combine the oats, water or milk, and salt.\n
+2. Microwave on high for 1-2 minutes, stirring occasionally, until the oats are cooked and the liquid is absorbed.\n
+3. Add sweetener or other toppings as desired.\n
+</string>
+
+<string name="rice_balls_name">Rice Balls</string>
+<string name="rice_balls_ingredients">
+\u2022 2 cups cooked white rice\n
+\u2022 1/2 cup grated Parmesan cheese\n
+\u2022 2 eggs, beaten\n
+\u2022 1/4 cup all-purpose flour\n
+\u2022 Salt and pepper to taste\n
+\u2022 1/4 cup breadcrumbs\n
+\u2022 Vegetable oil for frying\n
+</string>
+<string name="rice_balls_instructions">
+1. In a large bowl, combine the cooked rice, Parmesan cheese, eggs, flour, salt, and pepper. Mix well.\n
+2. Using your hands, form the mixture into small balls.\n
+3. Roll the rice balls in the breadcrumbs until they are evenly coated.\n
+4. In a large frying pan, heat the vegetable oil over medium-high heat.\n
+5. Add the rice balls to the pan and fry until they are golden brown on all sides.\n
+6. Remove the rice balls from the pan and place them on a paper towel to drain excess oil.\n
+7. Serve the rice balls hot with your favorite dipping sauce.\n
+</string>
+</resources>
