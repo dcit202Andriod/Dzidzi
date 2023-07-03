@@ -66,4 +66,37 @@
             />
     </androidx.cardview.widget.CardView>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/card"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/ingred">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            android:layout_paddingVertical="10dp"
+            android:layout_marginBottom="5dp"
+            android:lineHeight="32dp"
+            android:textSize="24sp"
+            android:id="@+id/ingredtitle"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ingredtitle"
+            android:paddingVertical="0dp"
+            android:paddingLeft="10dp"
+            android:lineHeight="16dp"
+            android:textSize="14sp"
+            android:letterSpacing="0.004"
+            android:text="@string/CornPorridgeIngredients"
+            />
+    </RelativeLayout>
 </RelativeLayout>
