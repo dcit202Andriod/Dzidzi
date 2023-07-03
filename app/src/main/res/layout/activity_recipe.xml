@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Recipe">
+    tools:context=".Recipe"
+    android:paddingTop="20dp"
+    android:paddingHorizontal="10dp"
+    android:paddingBottom="0dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/navlayout"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dzidzi"
+            android:textSize="24sp"
+            android:id="@+id/logo"
+            android:fontFamily="sans-serif"
+            android:layout_centerVertical="true"
+
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/menu"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </RelativeLayout>
+
+</RelativeLayout>
