@@ -38,5 +38,32 @@
             android:src="@drawable/menu"
             tools:ignore="SpeakableTextPresentCheck" />
     </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CornPorridgeTitle"
+        android:layout_below="@+id/navlayout"
+        android:textSize="36sp"
+        android:lineHeight="44dp"
+        android:id="@+id/title"
+        android:layout_marginBottom="22dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        app:cardCornerRadius="8dp"
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/card"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:src="@mipmap/corn_porridge_breakfast"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
