@@ -62,7 +62,7 @@
             android:layout_alignParentRight="true"
             android:background="@color/white"
             android:padding="3dp"
-            app:srcCompat="@mipmap/logo" />
+            app:srcCompat="@drawable/menu" />
 
     </RelativeLayout>
 
