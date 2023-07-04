@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.dzidzi.Models.RecipeCategory;
 import com.example.dzidzi.R;
+import com.example.dzidzi.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
 
@@ -19,6 +20,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
     Context context;
 
     ArrayList<RecipeCategory> homeArr = new ArrayList<>();
+
 
     public void setHomeArr(ArrayList<RecipeCategory> homeArr) {
         this.homeArr = homeArr;
@@ -55,6 +57,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
     public class ViewHolder extends RecyclerView.ViewHolder{
         private TextView txtName;
         private ImageView imgName;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             txtName = itemView.findViewById(R.id.categoryName);
