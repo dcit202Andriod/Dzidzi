@@ -3,12 +3,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Home">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dzidzi"
+            android:textSize="24sp"
+            android:id="@+id/food_logo"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/food_logo"
+            android:id="@+id/food_slogan"
+            android:textSize="36sp"
+            android:fontFamily="sans-serif"
+            android:text="Get Cooking Today"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="Breakfast"
+            android:fontFamily="sans-serif"
+            android:layout_below="@+id/food_slogan"
+            android:textStyle="normal"
+            android:textSize="20dp"
+            android:id="@+id/categoryName"
+            android:textColor="@color/black"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/categoryName"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/breakfast_card_id">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:src="@mipmap/breakfast"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
 
 </FrameLayout>

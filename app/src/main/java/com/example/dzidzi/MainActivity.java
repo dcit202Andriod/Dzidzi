@@ -23,5 +23,6 @@ public class MainActivity extends AppCompatActivity {
         //Array to get all categories ie. breakfast, lunch and supper and their ids
         homeArr = homeDatabaseHelper.getAllCategories();
 
+
     }
 }
