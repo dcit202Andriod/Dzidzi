@@ -1,7 +1,16 @@
 <resources>
+
 <string name="app_name">Dzidzi</string>
 <!-- Placeholder text changed!!! -->
-<string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+<string name="list_item1">Breafast</string>
+<string name="list_item2">Lunch</string>
+<string name="list_item3">Dinner</string>
+
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 <string name="rice_water_name">Rice Water</string>
 <string name="rice_water_ingredients">
@@ -151,25 +160,25 @@
 
 <string name="CornPorridgeTitle">Corn Porridge</string>
 <string name="CornPorridgeIngredients">
-\u2022 1 cup cornmeal
-\u2022 4 cups water or milk
-\u2022 Sugar or sweetener (to taste)
-\u2022 Salt (a pinch)
-\u2022 Optional flavourings:
-    vanilla extract, cinnamon, nutmeg,\n\t or grated coconut
+\u2022 1 cup cornmeal\n
+\u2022 4 cups water or milk\n
+\u2022 Sugar or sweetener (to taste)\n
+\u2022 Salt (a pinch)\n
+\u2022 Optional flavourings:\n
+\tvanilla extract, cinnamon, nutmeg, or grated coconut\n
 </string>
 <string name="CornPorridgeInstructions">
-1. In a saucepan, bring the water or milk to a boil over medium heat.
-2. In a separate bowl, mix the cornmeal with a little water or milk to create a smooth paste, ensuring there are no lumps.
-3. Gradually pour the cornmeal paste into the boiling water or milk, stirring continuously to prevent lumps from forming.
-4. Reduce the heat to low and let the mixture simmer, stirring frequently to prevent sticking or burning. This helps the cornmeal to cook evenly and thicken.
-5. Continue simmering and stirring for about 10-15 minutes or until the cornmeal reaches a thick, smooth consistency. Adjust the cooking time based on your desired thickness.
-6. Add sugar or sweetener to taste, along with a pinch of salt. Stir well to combine and dissolve the sweetener.
-7. If desired, add flavorings such as vanilla extract, cinnamon, nutmeg, or grated coconut to enhance the taste. Stir to incorporate the flavors.
-8. Once the porridge has reached your desired consistency and flavor, remove it from the heat.
-9. Allow the porridge to cool for a few minutes before serving. It will thicken slightly as it cools.
-10. Serve the corn porridge warm in bowls or mugs. You can garnish it with additional toppings such as a sprinkle of cinnamon, a dollop of butter, or a drizzle of honey, according to your preference.
-Enjoy your warm and comforting corn porridge!
+1. In a saucepan, bring the water or milk to a boil over medium heat.\n
+2. In a separate bowl, mix the cornmeal with a little water or milk to create a smooth paste, ensuring there are no lumps.\n
+3. Gradually pour the cornmeal paste into the boiling water or milk, stirring continuously to prevent lumps from forming.\n
+4. Reduce the heat to low and let the mixture simmer, stirring frequently to prevent sticking or burning. This helps the cornmeal to cook evenly and thicken.\n
+5. Continue simmering and stirring for about 10-15 minutes or until the cornmeal reaches a thick, smooth consistency. Adjust the cooking time based on your desired thickness.\n
+6. Add sugar or sweetener to taste, along with a pinch of salt. Stir well to combine and dissolve the sweetener.\n
+7. If desired, add flavorings such as vanilla extract, cinnamon, nutmeg, or grated coconut to enhance the taste. Stir to incorporate the flavors.\n
+8. Once the porridge has reached your desired consistency and flavor, remove it from the heat.\n
+9. Allow the porridge to cool for a few minutes before serving. It will thicken slightly as it cools.\n
+10. Serve the corn porridge warm in bowls or mugs. You can garnish it with additional toppings such as a sprinkle of cinnamon, a dollop of butter, or a drizzle of honey, according to your preference.\n
+Enjoy your warm and comforting corn porridge!\n
 </string>
 
 <string name="AmpesiwithKontomireTitle">Ampesi with Kontomire</string>

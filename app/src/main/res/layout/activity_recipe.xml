@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Recipe"
@@ -35,6 +40,8 @@
             android:background="@color/white"
             android:minWidth="48dp"
             android:minHeight="48dp"
+            android:id="@+id/menu"
+            android:onClick="showPopup"
             android:src="@drawable/menu"
             android:contentDescription="menu_icon"
             tools:ignore="SpeakableTextPresentCheck" />
@@ -75,12 +82,12 @@
         android:layout_marginBottom="22dp"
         android:id="@+id/ingred">
 
-
+        <!--            android:layout_paddingVertical="10dp"-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ingredients"
-            android:layout_paddingVertical="10dp"
+
             android:layout_marginBottom="5dp"
             android:lineHeight="32dp"
             android:textSize="24sp"
@@ -108,24 +115,23 @@
         android:layout_below="@+id/ingred"
         android:layout_marginBottom="22dp">
 
-
+<!--        android:layout_paddingVertical="10dp"-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Instructions"
-            android:layout_paddingVertical="10dp"
+
             android:layout_marginBottom="5dp"
             android:lineHeight="32dp"
             android:textSize="24sp"
             android:id="@+id/instructitle"
             />
 
-
+<!--        android:paddingVertical="0dp"-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/instructitle"
-            android:paddingVertical="0dp"
             android:paddingStart="10dp"
             android:lineHeight="16dp"
             android:textSize="14sp"
@@ -133,4 +139,8 @@
             android:text="@string/CornPorridgeInstructions"
             />
     </RelativeLayout>
+
+
 </RelativeLayout>
+
+</ScrollView>
