@@ -16,9 +16,9 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        RecipeCategory breakfastCategory = new RecipeCategory(1, "Breakfast");
-        RecipeCategory lunchCategory = new RecipeCategory(2, "Lunch");
-        RecipeCategory dinnerCategory = new RecipeCategory(3, "Supper");
+        RecipeCategory breakfastCategory = new RecipeCategory(getResources().getIdentifier("breakfast", "mipmap", getPackageName() ), "Breakfast");
+        RecipeCategory lunchCategory = new RecipeCategory(getResources().getIdentifier("lunch", "mipmap", getPackageName() ), "Lunch");
+        RecipeCategory dinnerCategory = new RecipeCategory(getResources().getIdentifier("supper", "mipmap", getPackageName() ), "Supper");
 
         recipeDatabaseHelper.fillCategoryTable(breakfastCategory);
         recipeDatabaseHelper.fillCategoryTable(lunchCategory);
