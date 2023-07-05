@@ -11,20 +11,17 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.dzidzi.Models.Recipe;
 import com.example.dzidzi.R;
-import com.example.dzidzi.RecyclerViewInterface;
 
 import java.util.ArrayList;
 
 public class BreakfastAdapter extends RecyclerView.Adapter<BreakfastAdapter.MyViewHolder>{
-    private final RecyclerViewInterface recyclerViewInterface;
 
     Context context;
     private ArrayList<Recipe> breakfastArr = new ArrayList<>();
 
-    public BreakfastAdapter(Context context, ArrayList<Recipe> breakfastArr, RecyclerViewInterface recyclerViewInterface) {
+    public BreakfastAdapter(Context context, ArrayList<Recipe> breakfastArr) {
         this.context = context;
         this.breakfastArr = breakfastArr;
-        this.recyclerViewInterface = recyclerViewInterface;
     }
 
     @NonNull
@@ -32,8 +29,8 @@ public class BreakfastAdapter extends RecyclerView.Adapter<BreakfastAdapter.MyVi
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.breakfastview, parent, false);
-
-        return new BreakfastAdapter.MyViewHolder(view, recyclerViewInterface);
+        MyViewHolder holder = new MyViewHolder(view);
+        return holder;
     }
 
     @Override
@@ -50,26 +47,13 @@ public class BreakfastAdapter extends RecyclerView.Adapter<BreakfastAdapter.MyVi
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
-
         ImageView imageView;
         TextView textView;
-        public MyViewHolder(@NonNull View itemView, RecyclerViewInterface recyclerViewInterface) {
+        public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             imageView = itemView.findViewById(R.id.imageView);
             textView = itemView.findViewById(R.id.textView);
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if (BreakfastAdapter.this.recyclerViewInterface != null){
-                        int pos = getAdapterPosition();
-
-                        if (pos != RecyclerView.NO_POSITION){
-                            BreakfastAdapter.this.recyclerViewInterface.onItemClick(pos);
-                        }
-                    }
-                }
-            });
         }
     }
 }

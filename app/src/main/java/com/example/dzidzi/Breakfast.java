@@ -13,7 +13,7 @@ import com.example.dzidzi.Models.Recipe;
 
 import java.util.ArrayList;
 
-public class Breakfast extends AppCompatActivity implements RecyclerViewInterface {
+public class Breakfast extends AppCompatActivity{
 
 
     RecipeDatabaseHelper breakfastDatabaseHelper = new RecipeDatabaseHelper(this);
@@ -26,15 +26,12 @@ public class Breakfast extends AppCompatActivity implements RecyclerViewInterfac
 
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
 
-        BreakfastAdapter adapter = new BreakfastAdapter(this, breakfastArr, this);
-
-
-
 
         //Breakfast array from database.
         breakfastArr = breakfastDatabaseHelper.getBreakfastRecipes();
+        BreakfastAdapter adapter = new BreakfastAdapter(this, breakfastArr);
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2,GridLayoutManager.VERTICAL,false);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(gridLayoutManager);
         recyclerView.setAdapter(adapter);
 
@@ -42,14 +39,4 @@ public class Breakfast extends AppCompatActivity implements RecyclerViewInterfac
 
     }
 
-    @Override
-    public void onItemClick(int position) {
-        Intent intent = new Intent(Breakfast.this, Recipe.class );
-
-        intent.putExtra("BreakfastName",breakfastArr.get(position).getName());
-        intent.putExtra("BreakfastImage",breakfastArr.get(position).getImg());
-
-        startActivity(intent);
-
-    }
 }
