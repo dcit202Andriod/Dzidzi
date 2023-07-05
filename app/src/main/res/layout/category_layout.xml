@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Breakfast"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:id="@+id/categoryName"
+        android:textColor="@color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/categoryName"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/breakfast_card_id">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="138dp"
+            android:src="@mipmap/breakfast"
+            android:scaleType="centerCrop"
+            android:id="@+id/categoryImg"
+            />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
