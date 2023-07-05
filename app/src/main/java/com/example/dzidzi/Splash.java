@@ -37,5 +37,8 @@ public class Splash extends AppCompatActivity {
         recipeDatabaseHelper.fillRecipeTable(recipe4);
         recipeDatabaseHelper.fillRecipeTable(recipe5);
         recipeDatabaseHelper.fillRecipeTable(recipe6);
+
+        //code for splash screen run time
+
     }
 }
