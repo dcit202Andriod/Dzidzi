@@ -17,6 +17,8 @@ import java.util.ArrayList;
 
 public class SupperAdapter extends RecyclerView.Adapter<SupperAdapter.MyViewHolder> {
 
+    //Recyclerview
+
     private final Recyclerviewsupperinterface recyclerviewsupperinterface;
     private final ArrayList<Recipe> SupperArr;
     Context context;
