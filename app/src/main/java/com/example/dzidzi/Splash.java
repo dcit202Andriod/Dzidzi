@@ -2,7 +2,9 @@ package com.example.dzidzi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 
 import com.example.dzidzi.Database.RecipeDatabaseHelper;
 import com.example.dzidzi.Models.Recipe;
@@ -40,5 +42,14 @@ public class Splash extends AppCompatActivity {
 
         //code for splash screen run time
 
-    }
-}
+        final Intent intent = new Intent(Splash.this, MainActivity.class);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startActivity(intent);
+                finish();
+            }
+        }, 3000);
+    }}
+
+
