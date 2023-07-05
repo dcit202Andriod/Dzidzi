@@ -1,39 +1,37 @@
 package com.example.dzidzi.Adapters;
 
 import android.content.Context;
+import android.text.style.TabStopSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.dzidzi.Models.RecipeCategory;
 import com.example.dzidzi.R;
-import com.example.dzidzi.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
+
     Context context;
-
-    ArrayList<RecipeCategory> homeArr = new ArrayList<>();
-
 
     public void setHomeArr(ArrayList<RecipeCategory> homeArr) {
         this.homeArr = homeArr;
         notifyDataSetChanged();
     }
 
+    ArrayList<RecipeCategory> homeArr = new ArrayList<>();
+
     public HomeAdapter(Context context) {
         this.context = context;
     }
-
-
-
-
 
     @NonNull
     @Override
@@ -45,8 +43,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.txtName.setText(homeArr.get(position).getCategory());
         holder.imgName.setImageResource(homeArr.get(position).getId());
+        holder.txtName.setText(homeArr.get(position).getCategory());
     }
 
     @Override
@@ -55,13 +53,17 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        private TextView txtName;
-        private ImageView imgName;
+        TextView txtName;
+        ImageView imgName;
+        CardView catCard;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
             txtName = itemView.findViewById(R.id.categoryName);
             imgName = itemView.findViewById(R.id.categoryImg);
+            catCard = itemView.findViewById(R.id.breakfast_card_id);
+
         }
     }
 }
