@@ -45,6 +45,7 @@ public class Supper extends AppCompatActivity implements Recyclerviewsupperinter
 
     }
 
+    //Intent for SupperJava class
     @Override
     public void onItemClick(int position) {
         Intent intent = new Intent(Supper.this, Recipe.class);
