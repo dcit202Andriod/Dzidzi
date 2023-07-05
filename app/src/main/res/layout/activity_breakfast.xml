@@ -28,8 +28,8 @@
             android:layout_height="22dp"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
-            android:src="@drawable/menu"
-            android:backgroundTint="#002C192F"/>
+            android:backgroundTint="#002C192F"
+            android:src="@drawable/menu" />
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"

@@ -9,21 +9,22 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.dzidzi.Breakfast;
 import com.example.dzidzi.Models.Recipe;
 import com.example.dzidzi.R;
+import com.example.dzidzi.RecyclerViewInterface;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
-public class BreakfastAdapter extends RecyclerView.Adapter<BreakfastAdapter.MyViewHolder> {
+public class BreakfastAdapter extends RecyclerView.Adapter<BreakfastAdapter.MyViewHolder>{
+    private final RecyclerViewInterface recyclerViewInterface;
 
     Context context;
     private ArrayList<Recipe> breakfastArr = new ArrayList<>();
 
-    public BreakfastAdapter(Context context, ArrayList<Recipe> breakfastArr) {
+    public BreakfastAdapter(Context context, ArrayList<Recipe> breakfastArr, RecyclerViewInterface recyclerViewInterface) {
         this.context = context;
         this.breakfastArr = breakfastArr;
+        this.recyclerViewInterface = recyclerViewInterface;
     }
 
     @NonNull
@@ -32,7 +33,7 @@ public class BreakfastAdapter extends RecyclerView.Adapter<BreakfastAdapter.MyVi
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.breakfastview, parent, false);
 
-        return new BreakfastAdapter.MyViewHolder(view);
+        return new BreakfastAdapter.MyViewHolder(view, recyclerViewInterface);
     }
 
     @Override
@@ -52,11 +53,23 @@ public class BreakfastAdapter extends RecyclerView.Adapter<BreakfastAdapter.MyVi
 
         ImageView imageView;
         TextView textView;
-        public MyViewHolder(@NonNull View itemView) {
+        public MyViewHolder(@NonNull View itemView, RecyclerViewInterface recyclerViewInterface) {
             super(itemView);
 
             imageView = itemView.findViewById(R.id.imageView);
             textView = itemView.findViewById(R.id.textView);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (BreakfastAdapter.this.recyclerViewInterface != null){
+                        int pos = getAdapterPosition();
+
+                        if (pos != RecyclerView.NO_POSITION){
+                            BreakfastAdapter.this.recyclerViewInterface.onItemClick(pos);
+                        }
+                    }
+                }
+            });
         }
     }
 }
