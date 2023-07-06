@@ -10,42 +10,50 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.dzidzi.Adapters.HomeAdapter;
 import com.example.dzidzi.Database.RecipeDatabaseHelper;
 import com.example.dzidzi.Models.RecipeCategory;
-import com.example.dzidzi.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
-
-    ActivityMainBinding binding;
-
+    ImageButton homeBtn;
+    ImageButton searchBtn;
+    ImageButton feedbackBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-        replaceFragment(new HomeFragment());
-        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
-            if(item.getItemId() == R.id.home){
-                replaceFragment(new HomeFragment());
-                return true;
-            } else if (item.getItemId() == R.id.search) {
-                replaceFragment(new SearchFragment());
-                return true;
-            }else if(item.getItemId() == R.id.feedback){
-                replaceFragment(new FeedbackFragment());
-                return true;
+
+        homeBtn = findViewById(R.id.home_btn);
+        searchBtn = findViewById(R.id.search_btn);
+        feedbackBtn = findViewById(R.id.feedback_btn);
+
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               replaceFragment(new HomeFragment());
             }
-            return true;
         });
 
+        searchBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               replaceFragment(new SearchFragment());
+            }
+        });
 
+        feedbackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               replaceFragment(new FeedbackFragment());
+            }
+        });
 
     }
     private void replaceFragment(Fragment fragment){
