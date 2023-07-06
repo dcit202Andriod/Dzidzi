@@ -41,7 +41,7 @@
             android:layout_below="@+id/food_slogan"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:id="@+id/recCategoryParent"/>
+            android:id="@+id/categoryRecView"/>
 
 
     </RelativeLayout>

@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
         homeBtn = findViewById(R.id.home_btn);
         searchBtn = findViewById(R.id.search_btn);
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               replaceFragment(new HomeFragment());
+               replaceFragment(new HomeFragment(MainActivity.this));
             }
         });
 
