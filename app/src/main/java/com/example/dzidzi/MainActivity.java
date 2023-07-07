@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               replaceFragment(new SearchFragment());
+               replaceFragment(new SearchFragment(MainActivity.this));
             }
         });
 
