@@ -4,15 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="20dp"
-    android:paddingLeft="20dp"
-    android:paddingRight="20dp"
-    android:paddingBottom="0dp"
-    tools:context=".MainActivity"
-    >
-
-
-    <RelativeLayout
+    android:padding="10dp"
+    tools:context=".MainActivity">
+        <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="67dp"
         android:layout_marginTop="20dp"
@@ -58,12 +52,12 @@
 
         <ImageButton
             android:id="@+id/feedbackimageButton"
-            android:layout_width="54dp"
-            android:layout_height="match_parent"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:background="@color/white"
-            android:padding="3dp"
-            app:srcCompat="@drawable/menu" />
+            android:padding="5dp"
+            android:src="@drawable/menu"/>
 
     </RelativeLayout>
 
@@ -118,8 +112,8 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:id="@+id/feedbackframe2"
-
         >
+
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -127,30 +121,30 @@
             <RadioButton
                 android:id="@+id/feedbackbutton1"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
+                android:layout_height="30dp"
                 android:text="Not at all satisfied" />
 
             <RadioButton
                 android:id="@+id/feedbackradioButton2"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_marginTop="10dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
                 android:text="Somewhat unsatisfied" />
 
 
             <RadioButton
                 android:id="@+id/feedbackradioButton3"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_marginTop="10dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
                 android:text="Neutral" />
 
 
             <RadioButton
                 android:id="@+id/feedbackradioButton4"
                 android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
                 android:text="Somewhat satisfied" />
 
 
@@ -160,7 +154,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="27dp"
                 android:text="Completely satisfied"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="3dp" />
 
 
 
