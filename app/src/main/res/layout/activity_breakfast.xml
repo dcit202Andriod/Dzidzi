@@ -12,17 +12,18 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginBottom="45dp">
+        android:layout_marginBottom="20dp">
+
         <TextView
             android:id="@+id/title"
             android:layout_width="67dp"
             android:layout_height="32dp"
-            android:text="Dzidzi"
-            android:textSize="24sp"
-            android:gravity="left|center"
-            android:textColor="#2C192F"
+            android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
-            android:layout_alignParentLeft="true"/>
+            android:gravity="left|center"
+            android:text="Dzidzi"
+            android:textColor="#2C192F"
+            android:textSize="24sp" />
 
         <ImageView
             android:layout_width="50dp"
