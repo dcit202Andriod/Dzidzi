@@ -79,7 +79,7 @@ public class SearchFragment extends Fragment {
     private void filter(String newText) {
         ArrayList<Recipe> filteredSearch = new ArrayList<>();
         for (Recipe singleRecipe: allRecipesArr){
-            if(singleRecipe.getName().contains(newText)){
+            if(singleRecipe.getName().toLowerCase().contains(newText.toLowerCase())){
                 filteredSearch.add(singleRecipe);
             }
         }
