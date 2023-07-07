@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        replaceFragment(new HomeFragment(this));
 
         homeBtn = findViewById(R.id.home_btn);
         searchBtn = findViewById(R.id.search_btn);

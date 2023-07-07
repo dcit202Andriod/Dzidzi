@@ -1,6 +1,7 @@
 package com.example.dzidzi.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,8 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.dzidzi.Breakfast;
+import com.example.dzidzi.Lunch;
 import com.example.dzidzi.Models.RecipeCategory;
 import com.example.dzidzi.R;
+import com.example.dzidzi.Supper;
 
 import java.util.ArrayList;
 
@@ -41,7 +45,22 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
             holder.txtName.setText(homeArr.get(position).getCategory());
-            holder.imgView.setImageResource(homeArr.get(position).getId());
+            holder.imgView.setImageResource(homeArr.get(position).getImg());
+            holder.imgView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (homeArr.get(holder.getAdapterPosition()).getId() == 1) {
+                        Intent i = new Intent(context, Breakfast.class);
+                        context.startActivity(i);
+                    } else if (homeArr.get(holder.getAdapterPosition()).getId() == 2) {
+                        Intent i = new Intent(context, Lunch.class);
+                        context.startActivity(i);
+                    } else if (homeArr.get(holder.getAdapterPosition()).getId() == 3) {
+                        Intent i = new Intent(context, Supper.class);
+                        context.startActivity(i);
+                    }
+                }
+            });
     }
 
     @Override
