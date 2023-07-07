@@ -1,10 +1,18 @@
 <resources>
-<string name="app_name">Dzidzi</string>
-<!-- TODO: Remove or change this placeholder text -->
-<string name="hello_blank_fragment">Hello blank fragment</string>
 
-<string name="rice_water_name">Rice Water</string>
-<string name="rice_water_ingredients">
+    <string name="app_name">Dzidzi</string>
+    <!-- Placeholder text changed!!! -->
+
+
+    <string name="list_item1">Breafast</string>
+    <string name="list_item2">Lunch</string>
+    <string name="list_item3">Dinner</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="rice_water_name">Rice Water</string>
+    <string name="rice_water_ingredients">
 \u2022 1 cup rice\n
 \u2022 5 1/2 -6 cups water\n
 \u2022 1 teaspoon salt\n
@@ -13,40 +21,40 @@
 \u2022 powdered or evaporated milk to serve\n
 \u2022 Dash of nutmeg for garnish optional\n
 </string>
-<string name="rice_water_instructions">
+    <string name="rice_water_instructions">
 1. Wash rice and pour in a large saucepan with 5 cupts of water and put on a high heat.\n
 2. Boil for about 20 minutes till the rice has soaked the water and soft. Add the salt and the other one cup water if needed. Using a ladle, beat the rice against the saucepan to form a smooth pudding of consistency.\n
 3. Add the nutmeg and sweetner of choice let it simmer for about five minutes.\n
 4. Serve with milk of choice and sprinkle with tiny dash of nutmeg for garnish.\n
 </string>
 
-<string name="waakye_name">Waakye</string>
-<string name="waakye_ingredients">
+    <string name="waakye_name">Waakye</string>
+    <string name="waakye_ingredients">
 \u2022 1 cup dried black eyed beans/ peas soaked overnight\n
 \u2022 2 cups rice\n
 \u2022 8-10 dried millet stalk leaves\n
 \u2022 salt as required\n
 </string>
-<string name="waakye_instructions">
+    <string name="waakye_instructions">
 1. Pour over a litre of water into a saucepan together with the millet leaf stalks. Put on a high heat to boil. The millet stalk leaves will start omitting its colour and the water will start turning into a deep wine colour.\n
 2.  Rinse the saoked beans and add to the boiling water. Cover and let it cook till tender. Mean while rinse the rice till the water is cleared. Add the washed rice into the saucepan together with salt to taste. (You might need to add more water.) Add water if needed. Stir and cover tightly.\n
 3. Do not remove the millet stalk leaves. When the rice boils over, reduce heat and simmer till the water is absorbed and the rice is cooked through. Rent for three to five minutes, remove millet stalk leaves and fluff with a fork.\n
 </string>
 
-<string name="omo_tuo_name">Omo Tuo</string>
-<string name="omo_tuo_ingredients">
+    <string name="omo_tuo_name">Omo Tuo</string>
+    <string name="omo_tuo_ingredients">
 \u2022 1 cup rice\n
 \u2022 3-4 cups water or as required\n
 \u2022 Salt as required\n
 </string>
-<string name="omo_tuo_instructions">
+    <string name="omo_tuo_instructions">
 1. Rinse rice and put in a medium cooking pot. Add water and salt to taste.\n
 2. Put rice on high and bring to ball. When rice boils over, reduce heat to medium and let cook till all water is absorbed and very soft when pressed between your fingers. Turn off heat.\n
 3. With the rice in the cooking pot, use a wooden ladle to beat or mash the rice against the sides of the pot for it to be glutinous. Divide the glutinous rice into balls according to required serving. Serve with soup of choice.\n
 </string>
 
-<string name="wheat_porridge_name">Wheat Porridge</string>
-<string name="wheat_porridge_ingredients">
+    <string name="wheat_porridge_name">Wheat Porridge</string>
+    <string name="wheat_porridge_ingredients">
 \u2022 Wheat Porridge\n
 \u2022 Ingredients\n
 \u2022 1 cup of whole wheat\n
@@ -55,7 +63,7 @@
 \u2022 Milk (optional)\n
 \u2022 Sugar (optional)\n
 </string>
-<string name="wheat_porridge_instructions">
+    <string name="wheat_porridge_instructions">
 1. Boil two cups of water in a saucepan.\n
 2. Pour in the wheat.\n
 3. Cover it with the lid and remove it from the heat source.\n
@@ -65,8 +73,8 @@
 7. Serve. You can add sugar and milk to your taste.\n
 </string>
 
-<string name="jollof_rice_name">Jollof Rice</string>
-<string name="jollof_rice_ingredients">
+    <string name="jollof_rice_name">Jollof Rice</string>
+    <string name="jollof_rice_ingredients">
 \u2022 2 large yellow onions, roughly chopped/n
 \u2022 ⅓ cup vegetable oil (80 mL), plus 2 tablespoons, divided\n
 \u2022 14 of diced tomato (395 g), 2 cans\n
@@ -81,7 +89,7 @@
 \u2022 1 cup frozen mixed vegetable (150 g)\n
 \u2022 1 ½ cups water (360 mL)\n
 </string>
-<string name="jollof_rice_instructions">
+    <string name="jollof_rice_instructions">
 1. Add onions and 2 tablespoons of oil to a blender and pulse until smooth. Transfer to a medium bowl.\n
 2. Add the diced tomatoes, tomato paste, and habanero pepper to the blender, and pulse until smooth. Transfer to a separate medium bowl.\n
 3. Heat the remaining ⅓ cup (80 ml) of oil in a large, heavy-bottomed pot over medium heat.\n
@@ -91,8 +99,8 @@
 7. Enjoy!
 </string>
 
-<string name="goat_light_soup_name">Goat Light Soup</string>
-<string name="goat_light_soup_ingredients">
+    <string name="goat_light_soup_name">Goat Light Soup</string>
+    <string name="goat_light_soup_ingredients">
 \u2022 1 Pound of Goat Meat\n
 \u2022 2 Medium Tomatoes\n
 \u2022 Medium Garden Eggs\n
@@ -104,7 +112,7 @@
 \u2022 2 Cubes Beef Seasoning\n
 \u2022 Pinch of salt\n
 </string>
-<string name="goat_light_soup_instructions">
+    <string name="goat_light_soup_instructions">
 1. Pour goat meat into a saucepan over medium heat, add ginger and garlic paste.\n
 2. Add beef seasoning, diced onion, salt, water, stir and let cook for 15 minutes.\n
 3. Add tomatoes, onion, red chilli, garden eggs, stir and let cook until it\'s soft and tender.\n
@@ -115,21 +123,21 @@
 8. Ready to serve.\n
 </string>
 
-<string name="oat_name">Oat</string>
-<string name="oat_ingredients">
+    <string name="oat_name">Oat</string>
+    <string name="oat_ingredients">
 \u2022 1/2 cup instant oats\n
 \u2022 1 cup water or milk\n
 \u2022 Pinch of salt\n
 \u2022 Optional: sweetener, fruit, nuts, or other toppings\n
 </string>
-<string name="oat_instructions">
+    <string name="oat_instructions">
 1. In a microwave-safe bowl, combine the oats, water or milk, and salt.\n
 2. Microwave on high for 1-2 minutes, stirring occasionally, until the oats are cooked and the liquid is absorbed.\n
 3. Add sweetener or other toppings as desired.\n
 </string>
 
-<string name="rice_balls_name">Rice Balls</string>
-<string name="rice_balls_ingredients">
+    <string name="rice_balls_name">Rice Balls</string>
+    <string name="rice_balls_ingredients">
 \u2022 2 cups cooked white rice\n
 \u2022 1/2 cup grated Parmesan cheese\n
 \u2022 2 eggs, beaten\n
@@ -138,7 +146,7 @@
 \u2022 1/4 cup breadcrumbs\n
 \u2022 Vegetable oil for frying\n
 </string>
-<string name="rice_balls_instructions">
+    <string name="rice_balls_instructions">
 1. In a large bowl, combine the cooked rice, Parmesan cheese, eggs, flour, salt, and pepper. Mix well.\n
 2. Using your hands, form the mixture into small balls.\n
 3. Roll the rice balls in the breadcrumbs until they are evenly coated.\n
@@ -146,5 +154,257 @@
 5. Add the rice balls to the pan and fry until they are golden brown on all sides.\n
 6. Remove the rice balls from the pan and place them on a paper towel to drain excess oil.\n
 7. Serve the rice balls hot with your favorite dipping sauce.\n
+</string>
+
+
+    <string name="CornPorridgeTitle">Corn Porridge</string>
+    <string name="CornPorridgeIngredients">
+\u2022 1 cup cornmeal\n
+\u2022 4 cups water or milk\n
+\u2022 Sugar or sweetener (to taste)\n
+\u2022 Salt (a pinch)\n
+\u2022 Optional flavourings:\n
+\tvanilla extract, cinnamon, nutmeg, or grated coconut\n
+</string>
+    <string name="CornPorridgeInstructions">
+1. In a saucepan, bring the water or milk to a boil over medium heat.\n
+2. In a separate bowl, mix the cornmeal with a little water or milk to create a smooth paste, ensuring there are no lumps.\n
+3. Gradually pour the cornmeal paste into the boiling water or milk, stirring continuously to prevent lumps from forming.\n
+4. Reduce the heat to low and let the mixture simmer, stirring frequently to prevent sticking or burning. This helps the cornmeal to cook evenly and thicken.\n
+5. Continue simmering and stirring for about 10-15 minutes or until the cornmeal reaches a thick, smooth consistency. Adjust the cooking time based on your desired thickness.\n
+6. Add sugar or sweetener to taste, along with a pinch of salt. Stir well to combine and dissolve the sweetener.\n
+7. If desired, add flavorings such as vanilla extract, cinnamon, nutmeg, or grated coconut to enhance the taste. Stir to incorporate the flavors.\n
+8. Once the porridge has reached your desired consistency and flavor, remove it from the heat.\n
+9. Allow the porridge to cool for a few minutes before serving. It will thicken slightly as it cools.\n
+10. Serve the corn porridge warm in bowls or mugs. You can garnish it with additional toppings such as a sprinkle of cinnamon, a dollop of butter, or a drizzle of honey, according to your preference.\n
+Enjoy your warm and comforting corn porridge!\n
+</string>
+
+    <string name="AmpesiwithKontomireTitle">Ampesi with Kontomire</string>
+    <string name="AmpesiwithKontomireIngredients">
+\u2022 Yam\n
+\u2022 Cocoyam leaves (Kontomire)\n
+\u2022 Onion\n
+\u2022 Tomatoes\n
+\u2022 Palm oil\n
+\u2022 Salt\n
+\u2022 Pepper\n
+\u2022 Optional flavourings:\n
+Seasonings, Fish or meat\n
+</string>
+    <string name="AmpesiwithKontomireInstructions">
+1. Peel and cut the yam into medium-sized pieces. Rinse the yam under running water to remove any dirt or impurities.\n
+2. Wash the cocoyam leaves (kontomire) thoroughly. Remove the tough stems and chop the leaves into smaller pieces.\n
+3. In a large pot, add water and bring it to a boil. Add the yam pieces to the boiling water and cook until they are soft and easily pierced with a fork.\n
+4. While the yam is cooking, prepare the kontomire stew. Heat some palm oil in a separate pot over medium heat.\n
+5. Chop the onions and tomatoes. Add the chopped onions to the heated oil and sauté until they become translucent.\n
+6. Add the chopped tomatoes to the pot and cook until they soften and release their juices. Stir occasionally to prevent burning.\n
+7. If using fish or meat, clean and season them with salt, pepper, and any desired seasonings. Add the fish or meat to the pot and cook until they are done.\n
+8. Add the chopped kontomire (cocoyam leaves) to the pot and stir well. Cover the pot and allow the stew to simmer for about 10-15 minutes, or until the kontomire is tender.\n
+9. Season the stew with salt, pepper, and any desired seasonings to taste. Adjust the flavors according to your preference.\n
+10. Once the yam is cooked, remove it from the pot and drain any excess water.\n
+11. Serve the cooked yam with the kontomire stew. You can either place the stew on top of the yam or serve it in a separate bowl.\n
+Enjoy your delicious Ampesi with Kontomire!\n
+</string>
+
+    <string name="TuoZaafiTitle">Tuo Zaafi</string>
+    <string name="TuoZaafiIngredients">
+For Tuo:\n
+\u2022 2-3 large yams\n
+\u2022 Water\n
+
+For Soup\n
+\u2022 Onion (1 large, chopped)\n
+\u2022 Tomatoes (2-3 medium-sized, chopped)\n
+\u2022 Scotch bonnet pepper (1-2, chopped)\n
+\u2022 Ginger (thumb-sized piece, grated)\n
+\u2022 Garlic cloves (2-3, minced)\n
+\u2022 Stock cube (optional)\n
+\u2022  Vegetables (such as spinach, kale, or collard greens)\n
+\u2022 Salt\n
+\u2022 Palm oil\n
+\u2022 Spices.\n
+</string>
+    <string name="TuoZaafiInstructions">
+1. Peel the yams and cut them into chunks. Rinse them under running water to remove any dirt or impurities.\n
+2. In a large pot, add enough water to cover the yam chunks. Bring it to a boil over medium-high heat and cook until the yam is tender and easily mashed with a fork.\n
+3. Once the yam is cooked, remove it from the pot and place it in a large bowl or mortar. Use a pestle or a masher to pound and mash the yam until it becomes a smooth, dough-like consistency. You can also use a food processor or blender to achieve the same result.\n
+4. Wet your hands with water and shape the mashed yam into small round balls or dumplings. Set them aside.\n
+5. In a separate pot, heat some palm oil over medium heat. Add the chopped onions and sauté until they become translucent.\n
+6. Add the chopped tomatoes, scotch bonnet pepper, grated ginger, and minced garlic to the pot. Stir and cook until the tomatoes soften and release their juices.\n
+7. If using meat, add the meat to the pot and cook until it is browned and cooked through. If using fish, add it later in the cooking process to prevent it from overcooking.\n
+8. Add spices and seasonings according to your preference. You can use a stock cube for added flavor if desired. Stir well to combine all the ingredients.\n
+9. Add enough water to create a soup consistency. Cover the pot and let the soup simmer for about 20-30 minutes to allow the flavors to meld together.\n
+10. Add the vegetables to the pot and cook until they are tender. Adjust the seasoning and salt according to your taste.\n
+11. In a separate pot, bring water to a boil. Add the shaped yam balls (Tuo) to the boiling water and cook for about 10-15 minutes or until they float to the surface, indicating they are cooked.\n
+12. Remove the cooked Tuo from the water and serve them alongside the prepared soup.\n
+To serve Tuo Zaafi, place the cooked Tuo in a bowl or plate and pour the soup over it. You can garnish with additional chopped vegetables or herbs if desired.\n
+Enjoy your delicious and hearty Tuo Zaafi!\n
+</string>
+
+    <string name="OblayoTitle">Oblayo</string>
+    <string name="OblayoIngredients">
+\u2022 Roughly ground Corn\n
+\u2022 Water\n
+\u2022 Sugar\n
+\u2022 Milk\n
+</string>
+    <string name="OblayoInstructions">
+1. Pour some corn in a bowl and add water to it.\n
+2. Stir and wait for the corn to settle, the chaff will surface, then pour away the chaff from it.\n
+3. Put water on the fire in a saucepan, pour in your corn and stir from time to time and leave it to cook for a while.\n
+4. cook until you can squash the corn.\n
+5. If you want it lighter, you can add some more water and stir and let it cook for a little more time.\n
+6. Pour into to a bowl and it is ready. Add your sugar and milk as you want.\n
+</string>
+
+    <string name="KokonteandGroundnutSoupTitle">Kokonte and Groundnut Soup</string>
+    <string name="KokonteandGroundnutSoupIngredients">
+For Kokonte:\n
+\u2022 Kokonte flour (powder)\n
+
+For Groundnut Soup:\n
+\u2022 Oil\n
+\u2022 Chicken\n
+\u2022 Paprika\n
+\u2022 Tomatoes\n
+\u2022 Garlic cloves\n
+\u2022 Parsleyr\n
+\u2022 Peanut butter paste\n
+\u2022 Salt\n
+\u2022 Pepper\n
+</string>
+    <string name="KokonteandGroundnutSoupInstructions">
+1. Place water in a pot and let boil. Then fetch some of it aside.\n
+2. Add the kokonte flour ro the pot and continuously stir to prevent lumps.\n
+3. Press the kokonte to one side of th epot, cover  and allow to cook for about 15 minutes.\n
+4. Finally, roll the kokonte into balls with your hands.\n
+6. Serve while hot.\n
+7. Season the chicken with onion, salt, paprika, and pepper and put aside.\n
+8. Heat oil ina big pot over relatively low heat. Pour the chicken and stir.\n
+9. Blend the onions, garlic, tomatoes, and parsley. Add the mixture to the pot containing the chicken, let it boil and simmer until the chicken is tender.\n
+10. Add the peanut butter taste and water and allow it to simmer for 5 minutes.\n
+</string>
+
+    <string name="BeansandplantainTitle">Beans and fried plantains</string>
+    <string name="BeansandplantainIngredients">
+\u2022 4 vey ripe plantains\n
+\u2022 Vegetable oil\n
+\u2022 1 large sliced Onion\n
+\u2022 4 large diced Tomatoes\n
+\u2022 1 clove of garlic\n
+\u2022 1 small Veggie bouillon cube\n
+\u2022 teaspoon ground ginger\n
+\u2022 1 Scotch bonnet pepper\n
+\u2022 2 cans black-eyed peas\n
+
+\u2022 Salt\n
+\u2022 Pepper\n
+\u2022 Optional flavourings:\n
+Chillies\n
+</string>
+    <string name="BeansandplantainInstructions">
+1. Heat both vegetable oil and chili oil in a large pot over medium-high heat.\n
+2. Add onion, garlic, ginger, chillies, and Scotch bonnet and cook gently until the onion is translucent.\n
+3. Add the tomatoes, salt and pepper and cook.\n
+4. Add bouillon cube, salt, and pepper and stir well. Adjust seasoning to your taste as you cook.\n
+5. Cook at medium heat for about 20 minutes.\n
+6. If you are happy with the taste of stew/sauce, reduce the heat and cook for another 15-20 minutes.\n
+7. Staring occasionally to make sure everything is well incorporated,cook until the beans are tender and the stew is a thick consistency.\n
+8. Place the sliced plantain in a medium bowl, add a little salt and toss together to ensure the plantain is evenly salted.\n
+9. Preheat a deep fryer or a heavy- bottomed Dutch  oven filled 3/4 of the way full with vegetable oil to 180 degrees Celsius.\n
+10. Fry the plantains in batches, leaving enough room for the slices to fry evenly. Once the first side of the plantains turn golden brown, flip the slices over to brown the other side.\n
+11. Remove plantains onto a plate lined with paper towels. Repeat the step above for frying the remaining plantain.\n
+12. To serve, scoop bean stew onto plate and top with fried plantains.\n
+</string>
+
+    <string name="TigernutPuddingTitle">Tigernut Pudding</string>
+    <string name="TigernutPuddingIngredients">
+\u2022 Tigernuts\n
+\u2022 Rice\n
+\u2022 Salt\n
+\u2022 Vanilla Essence\n
+\u2022 Water\n
+\u2022 Sugar\n
+\u2022 Milk\n
+</string>
+    <string name="TigernutPuddingInstructions">
+1. Soak tigernuts and uncooked rice separately overnight.\n
+2. Discard soaking water and wash both rice and tigernuts.\n
+3. Blend the soaked rice and tigernut whit enough water until smooth.\n
+4. Strain the blended mixture into a bowl, making sure there is no pulp in the strained tigernut milk.\n
+5. Blend the pulp with enough water and strain a few more times to extract  more milk from it.\n
+6. Pour the milk into a pot over low medium heat and whisk in one direction till it thickens.\n
+7. Add a pinch of salt, vanilla essence and sugar and continue whisking till evenly mixed.\n
+8. The tigernut pudding is ready. Serve while hot and enjoy with milk.\n
+</string>
+
+    <string name="AttiekewithGrilledTilapiaTitle">Attieke with Grilled Tilapia</string>
+    <string name="AttiekewithGrilledTilapiaIngredients">
+For Grilled Tilapia:\n
+\u2022 Fresh tilapia (cleaned and washed)\n
+\u2022 An onion\n
+\u2022 Salt\n
+\u2022 Garlic\n
+\u2022 Ginger\n
+\u2022 Spring onion\n
+\u2022 Few chillies\n
+\u2022 Scotch bonnet pepper\n
+\u2022All purpose seasoning\n
+\u2022 Maggi cube\n
+
+For Attieke:\n
+\u2022 Store bought attieke\n
+\u2022 Onions\n
+\u2022 Tomatoes\n
+\u2022 Bell pepper\n
+\u2022 Maggi cube\n
+\u2022 Vegetable oil\n
+\u2022 Salt\n
+</string>
+    <string name="AttiekewithGrilledTilapiaInstructions">
+1. Cut and blend all the vegetables with the seasoning to make a marinade.\n
+2. Cut slits on the tilapia and cover it in the marinade, making sure it gets in all the crevices and leave in a fridge  to marinate.\n
+3. Preheat oven to 180 degrees Fahrenheit before putting the tilapia in it for 35 minutes.\n
+4. Pour  attieke into a bowl and sprinkle water into it. Warm it in a microwave to absorb the water and soften.\n
+5. Pour a little oil in a frying pan and add chopped onions to fry for 2 minutes\n
+6. Add the warm attieke into the pan and stir it.\n
+7. Add Maggi and salt and continue stirring till evenly mixed.\n
+The attieke is now ready, serve with fresh chopped tomatoes and onions and chopped and steamed bell pepper, with the grilled tilapia and enjoy with pepper sauce.\n
+</string>
+
+    <string name="EbunuebunuTitle">Ebunuebunu</string>
+    <string name="EbunuebunuIngredients">
+\u2022 Snails or any meat of your choice\n
+\u2022 Herrings/dry or smoked fish\n
+\u2022 Salt\n
+\u2022 Onions\n
+\u2022 Tomatoes\n
+\u2022 Garlic\n
+\u2022 Ginger\n
+\u2022 Kontomire\n
+\u2022 prekese\n
+\u2022 Optional:\n
+peanut butter\n
+</string>
+    <string name="EbunuebunuInstructions">
+1. Wash the kontomire leaves in a clean bowl and put into a saucepan.\n
+2. Add a little amount of water and boil under a medium heat.\n
+3. Remove after 5 minutes when it softens.\n
+4. Wash the meat and put into another saucepan.\n
+5. Wash and cut onions into pieces.\n
+6. Add diced onions to meat, add seasoning and salt to taste. Place over medium heat.\n
+7. Chop some onions and pour into a blender, add ginger, pepper and garlic and blend into a smooth mixture.\n
+8. Pour the blended mixture into the meat on fire.\n
+9. Add about 4 pieces of fresh tomatoes and fresh onions.\n
+10. Add a teaspoon of peanut butter.\n
+11. Blend the cocoyam leaves and pour it into the soup.\n
+12. Add about 4 cups of water. you can add more depending on how thick you want your soup to be.\n
+13. Remove the cooked onions and cooked tomatoes and blend together.\n
+14. Pour the blended mixture back into the soup.\n
+15. Add this point, you can add the herrings or smoked fish. Allow the soup to boil for about 15 minutes.\n
+16. Add salt or maggie cube to taste.\n
+17. Add the prekese and allow it to diffuse in the soup for about 5 minutes.\n
+The soup is ready. Serve with fufu.\n
 </string>
 </resources>
