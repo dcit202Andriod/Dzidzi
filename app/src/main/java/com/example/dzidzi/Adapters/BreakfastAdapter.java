@@ -1,5 +1,6 @@
 package com.example.dzidzi.Adapters;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,22 @@ public class BreakfastAdapter extends RecyclerView.Adapter<BreakfastAdapter.MyVi
 
         holder.imageView.setImageResource(breakfastArr.get(position).getImg());
         holder.textView.setText(breakfastArr.get(position).getName());
+        holder.imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String foodIngredients = breakfastArr.get(holder.getAdapterPosition()).getIngredients();
+                String foodInstructions = breakfastArr.get(holder.getAdapterPosition()).getInstructions();
+                String foodRecipeName = breakfastArr.get(holder.getAdapterPosition()).getName();
+                int foodImage = breakfastArr.get(holder.getAdapterPosition()).getImg();
+                Intent intent = new Intent(context, com.example.dzidzi.Recipe.class);
+                intent.putExtra("Ingredients", foodIngredients);
+                intent.putExtra("Instructions", foodInstructions);
+                intent.putExtra("RecipeName", foodRecipeName);
+                intent.putExtra("RecipeImg", foodImage);
+
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

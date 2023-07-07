@@ -7,13 +7,41 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Recipe extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
+
+    TextView ingredients;
+    TextView instructions;
+    TextView recipeName;
+    ImageView recipeImage;
+    TextView logo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe);
+
+        ingredients = findViewById(R.id.ingredients);
+        instructions = findViewById(R.id.instructions);
+        recipeName = findViewById(R.id.recipeName);
+        recipeImage = findViewById(R.id.recipeImg);
+        logo = findViewById(R.id.logo);
+
+        String ingredientsData = getIntent().getStringExtra("Ingredients");
+        String instructionsData = getIntent().getStringExtra("Instructions");
+        String recipeNameData = getIntent().getStringExtra("RecipeName");
+        int recipeImgData = getIntent().getIntExtra("RecipeImg", 1);
+
+        try {
+            ingredients.setText(ingredientsData);
+            instructions.setText(instructionsData);
+            recipeName.setText(recipeNameData);
+            recipeImage.setImageResource(recipeImgData);
+        } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 
     public void showPopup(View v) {

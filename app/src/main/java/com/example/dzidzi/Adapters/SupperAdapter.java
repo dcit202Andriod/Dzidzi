@@ -1,5 +1,6 @@
 package com.example.dzidzi.Adapters;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,22 @@ public class SupperAdapter extends RecyclerView.Adapter<SupperAdapter.MyViewHold
 
         holder.fbImageView.setImageResource(supperArr.get(position).getImg());
         holder.fbTextView.setText(supperArr.get(position).getName());
+        holder.fbImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String foodIngredients = supperArr.get(holder.getAdapterPosition()).getIngredients();
+                String foodInstructions = supperArr.get(holder.getAdapterPosition()).getInstructions();
+                String foodRecipeName = supperArr.get(holder.getAdapterPosition()).getName();
+                int foodImage = supperArr.get(holder.getAdapterPosition()).getImg();
+                Intent intent = new Intent(context, com.example.dzidzi.Recipe.class);
+                intent.putExtra("Ingredients", foodIngredients);
+                intent.putExtra("Instructions", foodInstructions);
+                intent.putExtra("RecipeName", foodRecipeName);
+                intent.putExtra("RecipeImg", foodImage);
+
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -53,8 +70,8 @@ public class SupperAdapter extends RecyclerView.Adapter<SupperAdapter.MyViewHold
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            fbImageView = itemView.findViewById(R.id.fbImageView);
-            fbTextView = itemView.findViewById(R.id.fbTextView);
+            fbImageView = itemView.findViewById(R.id.supperImageView);
+            fbTextView = itemView.findViewById(R.id.supperTextView);
         }
     }
 }
