@@ -24,14 +24,14 @@
             android:gravity="center">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/fbImageView"
                 android:layout_width="170dp"
                 android:layout_height="207dp"
                 android:src="@mipmap/fufu_supper"
                 android:scaleType="fitXY"/>
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/fbTextView"
                 android:layout_width="170dp"
                 android:layout_height="45dp"
                 android:text="@string/goat_light_soup_name"

@@ -18,12 +18,12 @@
         android:layout_marginTop="20dp"
         android:paddingTop="5dp"
         android:paddingBottom="0dp"
-        android:id="@+id/frame3"
-        android:layout_below="@+id/frame4"
+        android:id="@+id/feedbackframe3"
+        android:layout_below="@+id/feedbackframe4"
         >
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/feedbacktextView5"
             android:layout_width="251dp"
             android:layout_height="20dp"
             android:text="Can we get back to you?"
@@ -43,20 +43,21 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/container"
+        android:id="@+id/feedbackcontainer"
         >
 
         <TextView
-            android:id="@+id/nav"
+            android:id="@+id/feedbacknav"
             android:layout_width="70dp"
             android:layout_height="32dp"
             android:layout_marginTop="7dp"
             android:fontFamily="sans-serif"
+            android:layout_centerVertical="true"
             android:text="Dzidzi"
             android:textSize="24sp" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/feedbackimageButton"
             android:layout_width="54dp"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
@@ -69,8 +70,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="63dp"
-        android:layout_below="@id/container"
-        android:id="@+id/frame"
+        android:layout_below="@id/feedbackcontainer"
+        android:id="@+id/feedbackframe"
         android:paddingTop="5dp"
         android:layout_marginTop="20dp"
         >
@@ -82,7 +83,7 @@
             android:layout_centerInParent="true">
 
             <TextView
-                android:id="@+id/textdislay"
+                android:id="@+id/feedbacktextdislay"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:text="Feedback"
@@ -94,13 +95,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_below="@id/frame"
+        android:layout_below="@id/feedbackframe"
         android:layout_marginTop="20dp"
-        android:id="@+id/frame1"
+        android:id="@+id/feedbackframe1"
         android:paddingTop="8dp">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/feedbacktextView"
             android:layout_width="251dp"
             android:layout_height="20dp"
             android:text="What do you think about out recipes?"
@@ -110,13 +111,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="195dp"
-        android:layout_below="@id/frame1"
+        android:layout_below="@id/feedbackframe1"
         android:layout_marginTop="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:id="@+id/frame2"
+        android:id="@+id/feedbackframe2"
 
         >
         <RadioGroup
@@ -127,10 +128,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="27dp"
                 android:text="Not at all satisfied"
-                android:id="@+id/button1"/>
+                android:id="@+id/feedbackbutton1"/>
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/feedbackradioButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="27dp"
                 android:text="Somewhat unsatisfied"
@@ -139,7 +140,7 @@
 
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/feedbackradioButton3"
                 android:layout_width="wrap_content"
                 android:layout_height="27dp"
                 android:text="Neutral"
@@ -147,7 +148,7 @@
 
 
             <RadioButton
-                android:id="@+id/radioButton4"
+                android:id="@+id/feedbackradioButton4"
                 android:layout_width="wrap_content"
                 android:layout_height="27dp"
                 android:text="Somewhat satisfied"
@@ -156,7 +157,7 @@
 
 
             <RadioButton
-                android:id="@+id/radioButton5"
+                android:id="@+id/feedbackradioButton5"
                 android:layout_width="wrap_content"
                 android:layout_height="27dp"
                 android:text="Completely satisfied"
@@ -170,11 +171,11 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="67dp"
-        android:layout_below="@+id/frame2"
+        android:layout_below="@+id/feedbackframe2"
         android:layout_marginTop="20dp"
         android:paddingTop="5dp"
         android:paddingBottom="0dp"
-        android:id="@+id/frame4"
+        android:id="@+id/feedbackframe4"
         >
 
         <TextView
@@ -197,10 +198,10 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/feedbackbutton"
         android:layout_width="270dp"
         android:layout_height="45dp"
-        android:layout_below="@+id/frame3"
+        android:layout_below="@id/feedbackframe3"
         android:layout_centerInParent="true"
         android:layout_marginTop="20dp"
         android:backgroundTint="#2C192F"

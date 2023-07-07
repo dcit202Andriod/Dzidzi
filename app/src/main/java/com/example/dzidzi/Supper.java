@@ -16,9 +16,9 @@ import com.example.dzidzi.Models.Recipe;
 
 import java.util.ArrayList;
 
-public class Supper extends AppCompatActivity implements Recyclerviewsupperinterface{
+public class Supper extends AppCompatActivity{
 
-
+    RecyclerView supperRecView;
     RecipeDatabaseHelper supperDatabaseHelper = new RecipeDatabaseHelper(this);
     ArrayList<Recipe> supperArr = new ArrayList<>();
 
@@ -27,28 +27,18 @@ public class Supper extends AppCompatActivity implements Recyclerviewsupperinter
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_supper);
 
-        RecyclerView recyclerView = findViewById(R.id.recyclerview);
+        supperRecView = findViewById(R.id.supperrecview);
 
-        SupperAdapter adapter = new SupperAdapter(this, supperArr,this );
-
-
-
-
-        //Breakfast array from database.
+        //Supper array from database.
         supperArr = supperDatabaseHelper.getSupperRecipes();
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2,GridLayoutManager.VERTICAL,false);
-        recyclerView.setLayoutManager(gridLayoutManager);
-        recyclerView.setAdapter(adapter);
+        SupperAdapter adapter = new SupperAdapter(this, supperArr);
+
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
+        supperRecView.setLayoutManager(gridLayoutManager);
+        supperRecView.setAdapter(adapter);
 
 
 
-    }
-
-    //Intent for SupperJava class
-    @Override
-    public void onItemClick(int position) {
-        Intent intent = new Intent(Supper.this, Recipe.class);
-        startActivity(intent);
     }
 }

@@ -11,39 +11,33 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.dzidzi.Models.Recipe;
 import com.example.dzidzi.R;
-import com.example.dzidzi.Recyclerviewsupperinterface;
 
 import java.util.ArrayList;
 
 public class SupperAdapter extends RecyclerView.Adapter<SupperAdapter.MyViewHolder> {
 
     //Recyclerview
-
-    private final Recyclerviewsupperinterface recyclerviewsupperinterface;
-    private final ArrayList<Recipe> SupperArr;
+    ArrayList<Recipe> supperArr = new ArrayList<>();
     Context context;
-    private ArrayList<Recipe> supperArr = new ArrayList<>();
 
-    public SupperAdapter(Context context, ArrayList<Recipe> SupperArr, Recyclerviewsupperinterface recyclerviewsupperinterface) {
+    public SupperAdapter(Context context, ArrayList<Recipe> supperArr) {
         this.context = context;
-        this.SupperArr = SupperArr;
-        this.recyclerviewsupperinterface = recyclerviewsupperinterface;
+        this.supperArr = supperArr;
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.superview, parent, false);
-
-        return new SupperAdapter.MyViewHolder(view, recyclerviewsupperinterface);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.superview, parent, false);
+        MyViewHolder holder = new MyViewHolder(view);
+        return holder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        holder.imageView.setImageResource(supperArr.get(position).getImg());
-        holder.textView.setText(supperArr.get(position).getName());
+        holder.fbImageView.setImageResource(supperArr.get(position).getImg());
+        holder.fbTextView.setText(supperArr.get(position).getName());
     }
 
     @Override
@@ -54,26 +48,13 @@ public class SupperAdapter extends RecyclerView.Adapter<SupperAdapter.MyViewHold
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
 
-        ImageView imageView;
-        TextView textView;
-        public MyViewHolder(@NonNull View itemView, Recyclerviewsupperinterface recyclerviewsupperinterface ) {
+        ImageView fbImageView;
+        TextView fbTextView;
+        public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            imageView = itemView.findViewById(R.id.imageView);
-            textView = itemView.findViewById(R.id.textView);
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (SupperAdapter.this.recyclerviewsupperinterface != null){
-                        int pos = getAdapterPosition();
-
-                        if (pos != RecyclerView.NO_POSITION){
-                          SupperAdapter.this.recyclerviewsupperinterface.onItemClick(pos);
-                        }
-                    }
-                }
-            });
+            fbImageView = itemView.findViewById(R.id.fbImageView);
+            fbTextView = itemView.findViewById(R.id.fbTextView);
         }
     }
 }
