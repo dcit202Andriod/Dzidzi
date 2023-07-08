@@ -48,3 +48,8 @@ Team members were assigned pages to implement.
 11. Victoria \
     Victoria was responsible for the creation of the application's splash page and icon design. She masterfully made use of packages and the
     concepts of threading to make the splash screen appear for three seconds before routing to the home page.
+# Links
+* Figma \
+  https://www.figma.com/file/5jCKIWVLLlAF8oF9vLyvG9/Untitled?type=design&node-id=126%3A312&mode=design&t=kP9fSicd1bqxcA51-1
+* YouTube \
+  https://youtu.be/fl3F5U_n4nM
