@@ -15,7 +15,7 @@
         android:layout_marginBottom="20dp">
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/breakfastHeader"
             android:layout_width="67dp"
             android:layout_height="32dp"
             android:layout_alignParentLeft="true"
@@ -26,12 +26,13 @@
             android:textSize="24sp" />
 
         <ImageView
-            android:layout_width="50dp"
+            android:layout_width="35dp"
             android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
             android:backgroundTint="#002C192F"
-            android:src="@drawable/menu" />
+            android:src="@drawable/menu"
+            android:onClick="showBreakfastPopup"/>
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"

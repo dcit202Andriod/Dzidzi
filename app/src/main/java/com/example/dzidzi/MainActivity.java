@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         feedbackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               replaceFragment(new FeedbackFragment());
+               replaceFragment(new FeedbackFragment(MainActivity.this));
             }
         });
 
