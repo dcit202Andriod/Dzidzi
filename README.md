@@ -31,7 +31,7 @@ Team members were assigned pages to implement.
    William acted as the master of the repository, creating branches, resolving conflicts, and merging branches. He also worked on the
    recipe page and created an SQLite database for the application.
 5. Sylvia \
-   Sylvia worked on the user interface (XNL) of the breakfast page, she also took her time to go through the entire application to
+   Sylvia worked on the user interface (XML) of the breakfast page, she also took her time to go through the entire application to
    enforce uniformity of UI.
 6. Aamina \
    Aamina designed the user interface (XML) of the recipe page, she also assisted William in the database by providing the needed data in
