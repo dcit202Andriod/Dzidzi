@@ -2,13 +2,13 @@ package com.example.dzidzi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class Recipe extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
@@ -47,14 +47,23 @@ public class Recipe extends AppCompatActivity implements PopupMenu.OnMenuItemCli
     public void showPopup(View v) {
         PopupMenu popup = new PopupMenu(Recipe.this, v);
         popup.setOnMenuItemClickListener(Recipe.this);
-        popup.getMenuInflater().inflate(R.menu.list_menu, popup.getMenu());
-
+        popup.getMenuInflater().inflate(R.menu.recipe_list_menu, popup.getMenu());
+        popup.show();
     }
 
     @Override
     public boolean onMenuItemClick(MenuItem item) {
         if (item.getItemId() == R.id.item1){
-            Toast.makeText(this, "Item 1 clicked", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(Recipe.this, Breakfast.class);
+            Recipe.this.startActivity(i);
+            return true;
+        } else if (item.getItemId() == R.id.item2){
+            Intent i = new Intent(Recipe.this, Lunch.class);
+            Recipe.this.startActivity(i);
+            return true;
+        } else if (item.getItemId() == R.id.item3){
+            Intent i = new Intent(Recipe.this, Supper.class);
+            Recipe.this.startActivity(i);
             return true;
         }
         return true;

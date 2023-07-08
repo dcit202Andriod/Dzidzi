@@ -14,7 +14,7 @@
         android:layout_height="50dp"
         android:layout_marginBottom="20dp">
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/supperHeader"
             android:layout_width="67dp"
             android:layout_height="32dp"
             android:text="Dzidzi"
@@ -29,8 +29,8 @@
             android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
-            android:backgroundTint="#002C192F"
-            android:src="@drawable/menu" />
+            android:src="@drawable/menu"
+            android:onClick="showSupperPopup"/>
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
