@@ -36,7 +36,7 @@ public class RecipeDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String queryStringCategory = String.format("CREATE TABLE %s(%s INTEGER PRIMARY KEY, %s INTEGER NOT NULL, %s TEXT NOT NULL)", RECIPE_CATEGORY_TABLE, COLUMN_CATEGORY_ID, COLUMN_CATEGORY_IMG, COLUMN_CATEGORY);
-        String queryStringRecipe = String.format("CREATE TABLE %s(%s INTEGER NOT NULL, %s TEXT NOT NULL, %s INTEGER NOT NULL, %s TEXT NOT NULL, %s TEXT NOT NULL, %s INTEGER NOT NULL, FOREIGN KEY (%s) REFERENCES %s(%s))", RECIPE_TABLE, COLUMN_RECIPE_ID, COLUMN_NAME, COLUMN_IMG, COLUMN_INGREDIENTS, COLUMN_INSTRUCTIONS, COLUMN_CATEGORY_REF_ID, COLUMN_CATEGORY_REF_ID, RECIPE_CATEGORY_TABLE, COLUMN_CATEGORY_ID);
+        String queryStringRecipe = String.format("CREATE TABLE %s(%s INTEGER PRIMARY KEY, %s TEXT NOT NULL, %s INTEGER NOT NULL, %s TEXT NOT NULL, %s TEXT NOT NULL, %s INTEGER NOT NULL, FOREIGN KEY (%s) REFERENCES %s(%s))", RECIPE_TABLE, COLUMN_RECIPE_ID, COLUMN_NAME, COLUMN_IMG, COLUMN_INGREDIENTS, COLUMN_INSTRUCTIONS, COLUMN_CATEGORY_REF_ID, COLUMN_CATEGORY_REF_ID, RECIPE_CATEGORY_TABLE, COLUMN_CATEGORY_ID);
         db.execSQL(queryStringCategory);
         db.execSQL(queryStringRecipe);
     }
@@ -44,6 +44,7 @@ public class RecipeDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + RECIPE_TABLE);
+        db.execSQL("DROP TABLE IF EXISTS " + RECIPE_CATEGORY_TABLE);
         onCreate(db);
     }
 
