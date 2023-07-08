@@ -38,14 +38,6 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-//        itemRecyclerView = view.findViewById(R.id.recCategoryParent);
-//
-//        homeArr = homeDatabaseHelper.getAllCategories();
-//        HomeAdapter homeAdapter = new HomeAdapter(getContext());
-//        homeAdapter.setHomeArr(homeArr);
-//
-//        itemRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
-//        itemRecyclerView.setAdapter(homeAdapter);
 
         return view;
     }

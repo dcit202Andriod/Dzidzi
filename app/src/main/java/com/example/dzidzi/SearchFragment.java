@@ -5,13 +5,17 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
+
+import com.example.dzidzi.Adapters.SearchAdapter;
 import com.example.dzidzi.Database.RecipeDatabaseHelper;
 import com.example.dzidzi.Models.Recipe;
 
@@ -22,11 +26,14 @@ public class SearchFragment extends Fragment {
 
     Context context;
     RecipeDatabaseHelper recipeDatabaseHelper;
-
+    private RecyclerView recyclerView;
+    private SearchView searchView;
+    SearchAdapter searchAdapter;
+    ArrayList<Recipe> allRecipesArr;
     public SearchFragment(Context context) {
         this.context = context;
     }
-    ArrayList<Recipe> allRecipesArr = new ArrayList<>();
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -44,5 +51,38 @@ public class SearchFragment extends Fragment {
 
         recipeDatabaseHelper = new RecipeDatabaseHelper(context);
         allRecipesArr = recipeDatabaseHelper.getAllRecipes();
+        recyclerView = view.findViewById(R.id.SearchCategoryRecView);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(context, 2);
+        recyclerView.setLayoutManager(gridLayoutManager);
+        searchAdapter = new SearchAdapter(context);
+        searchAdapter.setAllRecipesArr(allRecipesArr);
+        recyclerView.setAdapter(searchAdapter);
+        searchAdapter.notifyDataSetChanged();
+        searchView = view.findViewById(R.id.searchSection);
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                filter(newText);
+                return true;
+            }
+        });
+
+
+    }
+
+    private void filter(String newText) {
+        ArrayList<Recipe> filteredSearch = new ArrayList<>();
+        for (Recipe singleRecipe: allRecipesArr){
+            if(singleRecipe.getName().toLowerCase().contains(newText.toLowerCase())){
+                filteredSearch.add(singleRecipe);
+            }
+        }
+        searchAdapter.filterList(filteredSearch);
     }
 }
