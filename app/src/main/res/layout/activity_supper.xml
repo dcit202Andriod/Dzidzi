@@ -15,10 +15,10 @@
         android:layout_marginBottom="20dp">
         <TextView
             android:id="@+id/supperHeader"
-            android:layout_width="67dp"
+            android:layout_width="wrap_content"
             android:layout_height="32dp"
             android:text="Dzidzi"
-            android:textSize="24sp"
+            android:textSize="27sp"
             android:gravity="left|center"
             android:textColor="#2C192F"
             android:layout_centerInParent="true"

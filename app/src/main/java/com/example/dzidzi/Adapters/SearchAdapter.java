@@ -1,6 +1,7 @@
 package com.example.dzidzi.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,6 +42,22 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.ViewHolder
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
             holder.searchText.setText(allRecipesArr.get(position).getName());
             holder.imageView.setImageResource(allRecipesArr.get(position).getImg());
+        holder.imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String foodIngredients = allRecipesArr.get(holder.getAdapterPosition()).getIngredients();
+                String foodInstructions = allRecipesArr.get(holder.getAdapterPosition()).getInstructions();
+                String foodRecipeName = allRecipesArr.get(holder.getAdapterPosition()).getName();
+                int foodImage = allRecipesArr.get(holder.getAdapterPosition()).getImg();
+                Intent intent = new Intent(context, com.example.dzidzi.Recipe.class);
+                intent.putExtra("Ingredients", foodIngredients);
+                intent.putExtra("Instructions", foodInstructions);
+                intent.putExtra("RecipeName", foodRecipeName);
+                intent.putExtra("RecipeImg", foodImage);
+
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

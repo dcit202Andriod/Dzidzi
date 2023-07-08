@@ -24,6 +24,7 @@
             android:textSize="14sp" />
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
@@ -42,13 +43,13 @@
 
         <TextView
             android:id="@+id/feedbackHeader"
-            android:layout_width="70dp"
+            android:layout_width="wrap_content"
             android:layout_height="32dp"
             android:layout_marginTop="7dp"
             android:fontFamily="sans-serif"
             android:layout_centerVertical="true"
             android:text="Dzidzi"
-            android:textSize="24sp" />
+            android:textSize="27sp" />
 
     </RelativeLayout>
 
@@ -57,7 +58,6 @@
         android:layout_height="63dp"
         android:layout_below="@id/feedbackcontainer"
         android:id="@+id/feedbackframe"
-        android:paddingTop="5dp"
         android:layout_marginTop="20dp"
         >
 
@@ -107,7 +107,8 @@
 
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:id="@+id/radioGroupId">
 
             <RadioButton
                 android:id="@+id/feedbackbutton1"
@@ -170,6 +171,7 @@
             android:textSize="14sp" />
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"

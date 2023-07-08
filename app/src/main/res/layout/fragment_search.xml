@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Dzidzi"
-            android:textSize="28sp"
+            android:textSize="27sp"
             android:id="@+id/food_logo"
             android:fontFamily="sans-serif"
             android:layout_marginBottom="10dp"/>

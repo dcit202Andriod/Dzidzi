@@ -43,6 +43,7 @@ public class Splash extends AppCompatActivity {
         com.example.dzidzi.Models.Recipe recipe15 = new Recipe(15, getResources().getString(R.string.TigernutPuddingTitle), getResources().getIdentifier("pudding_breakfast", "mipmap", getPackageName() ), getResources().getString(R.string.TigernutPuddingIngredients), getResources().getString(R.string.TigernutPuddingInstructions), 1);
         com.example.dzidzi.Models.Recipe recipe16 = new Recipe(16, getResources().getString(R.string.AttiekewithGrilledTilapiaTitle), getResources().getIdentifier("attieke_lunch", "mipmap", getPackageName() ), getResources().getString(R.string.AttiekewithGrilledTilapiaIngredients), getResources().getString(R.string.AttiekewithGrilledTilapiaInstructions), 2);
         com.example.dzidzi.Models.Recipe recipe17 = new Recipe(17, getResources().getString(R.string.EbunuebunuTitle), getResources().getIdentifier("ebunuebunu_supper", "mipmap", getPackageName() ), getResources().getString(R.string.EbunuebunuIngredients), getResources().getString(R.string.EbunuebunuInstructions), 3);
+        com.example.dzidzi.Models.Recipe recipe18 = new Recipe(18, getResources().getString(R.string.AkplewithAdemeSoupTitle), getResources().getIdentifier("akple_with_ademesoup_supper", "mipmap", getPackageName() ), getResources().getString(R.string.AkplewithAdemeSoupIngredients), getResources().getString(R.string.AkplewithAdemeSoupInstructions), 3);
 
         recipeDatabaseHelper.fillRecipeTable(recipe1);
         recipeDatabaseHelper.fillRecipeTable(recipe2);
@@ -61,6 +62,7 @@ public class Splash extends AppCompatActivity {
         recipeDatabaseHelper.fillRecipeTable(recipe15);
         recipeDatabaseHelper.fillRecipeTable(recipe16);
         recipeDatabaseHelper.fillRecipeTable(recipe17);
+        recipeDatabaseHelper.fillRecipeTable(recipe18);
 
         //code for splash screen run time
 

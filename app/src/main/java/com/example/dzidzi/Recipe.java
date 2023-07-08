@@ -2,6 +2,7 @@ package com.example.dzidzi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -27,6 +28,14 @@ public class Recipe extends AppCompatActivity implements PopupMenu.OnMenuItemCli
         recipeName = findViewById(R.id.recipeName);
         recipeImage = findViewById(R.id.recipeImg);
         logo = findViewById(R.id.logo);
+        logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context context = Recipe.this;
+                Intent i = new Intent(context, MainActivity.class);
+                context.startActivity(i);
+            }
+        });
 
         String ingredientsData = getIntent().getStringExtra("Ingredients");
         String instructionsData = getIntent().getStringExtra("Instructions");
@@ -44,7 +53,7 @@ public class Recipe extends AppCompatActivity implements PopupMenu.OnMenuItemCli
 
     }
 
-    public void showPopup(View v) {
+    public void showRecipePopup(View v) {
         PopupMenu popup = new PopupMenu(Recipe.this, v);
         popup.setOnMenuItemClickListener(Recipe.this);
         popup.getMenuInflater().inflate(R.menu.recipe_list_menu, popup.getMenu());

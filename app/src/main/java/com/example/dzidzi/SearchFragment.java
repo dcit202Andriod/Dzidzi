@@ -1,6 +1,7 @@
 package com.example.dzidzi;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 import com.example.dzidzi.Adapters.SearchAdapter;
@@ -28,6 +30,7 @@ public class SearchFragment extends Fragment {
     RecipeDatabaseHelper recipeDatabaseHelper;
     private RecyclerView recyclerView;
     private SearchView searchView;
+    TextView foodLogo;
     SearchAdapter searchAdapter;
     ArrayList<Recipe> allRecipesArr;
     public SearchFragment(Context context) {
@@ -49,6 +52,7 @@ public class SearchFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        foodLogo = view.findViewById(R.id.food_logo);
         recipeDatabaseHelper = new RecipeDatabaseHelper(context);
         allRecipesArr = recipeDatabaseHelper.getAllRecipes();
         recyclerView = view.findViewById(R.id.SearchCategoryRecView);
@@ -59,6 +63,14 @@ public class SearchFragment extends Fragment {
         recyclerView.setAdapter(searchAdapter);
         searchAdapter.notifyDataSetChanged();
         searchView = view.findViewById(R.id.searchSection);
+
+        foodLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(context, MainActivity.class);
+                context.startActivity(i);
+            }
+        });
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
