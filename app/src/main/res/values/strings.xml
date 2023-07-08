@@ -6,7 +6,7 @@
 
     <string name="list_item1">Breafast</string>
     <string name="list_item2">Lunch</string>
-    <string name="list_item3">Dinner</string>
+    <string name="list_item3">Supper</string>
 
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
