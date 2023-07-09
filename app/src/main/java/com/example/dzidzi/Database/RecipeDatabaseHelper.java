@@ -19,6 +19,7 @@ public class RecipeDatabaseHelper extends SQLiteOpenHelper {
 
     public static final String COLUMN_CATEGORY = "category";
     public static final String RECIPE_CATEGORY_TABLE = "recipe_" + COLUMN_CATEGORY + "_table";
+    public static final String COLUMN_CATEGORY_IMG = COLUMN_CATEGORY + "_image";
     public static final String COLUMN_CATEGORY_ID = COLUMN_CATEGORY + "_id";
     public static final String RECIPE_TABLE = "recipe_table";
     public static final String COLUMN_RECIPE_ID = "recipe_id";
@@ -34,8 +35,8 @@ public class RecipeDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String queryStringCategory = String.format("CREATE TABLE %s(%s INTEGER PRIMARY KEY, %s TEXT NOT NULL)", RECIPE_CATEGORY_TABLE, COLUMN_CATEGORY_ID, COLUMN_CATEGORY);
-        String queryStringRecipe = String.format("CREATE TABLE %s(%s INTEGER PRIMARY KEY AUTOINCREMENT, %s TEXT NOT NULL, %s INTEGER NOT NULL, %s TEXT NOT NULL, %s TEXT NOT NULL, %s INTEGER NOT NULL, FOREIGN KEY (%s) REFERENCES %s(%s))", RECIPE_TABLE, COLUMN_RECIPE_ID, COLUMN_NAME, COLUMN_IMG, COLUMN_INGREDIENTS, COLUMN_INSTRUCTIONS, COLUMN_CATEGORY_REF_ID, COLUMN_CATEGORY_REF_ID, RECIPE_CATEGORY_TABLE, COLUMN_CATEGORY_ID);
+        String queryStringCategory = String.format("CREATE TABLE %s(%s INTEGER PRIMARY KEY, %s INTEGER NOT NULL, %s TEXT NOT NULL)", RECIPE_CATEGORY_TABLE, COLUMN_CATEGORY_ID, COLUMN_CATEGORY_IMG, COLUMN_CATEGORY);
+        String queryStringRecipe = String.format("CREATE TABLE %s(%s INTEGER PRIMARY KEY, %s TEXT NOT NULL, %s INTEGER NOT NULL, %s TEXT NOT NULL, %s TEXT NOT NULL, %s INTEGER NOT NULL, FOREIGN KEY (%s) REFERENCES %s(%s))", RECIPE_TABLE, COLUMN_RECIPE_ID, COLUMN_NAME, COLUMN_IMG, COLUMN_INGREDIENTS, COLUMN_INSTRUCTIONS, COLUMN_CATEGORY_REF_ID, COLUMN_CATEGORY_REF_ID, RECIPE_CATEGORY_TABLE, COLUMN_CATEGORY_ID);
         db.execSQL(queryStringCategory);
         db.execSQL(queryStringRecipe);
     }
@@ -43,6 +44,7 @@ public class RecipeDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + RECIPE_TABLE);
+        db.execSQL("DROP TABLE IF EXISTS " + RECIPE_CATEGORY_TABLE);
         onCreate(db);
     }
 
@@ -53,6 +55,7 @@ public class RecipeDatabaseHelper extends SQLiteOpenHelper {
         ContentValues cv = new ContentValues();
 
         cv.put(COLUMN_CATEGORY_ID, recipeCategory.getId());
+        cv.put(COLUMN_CATEGORY_IMG, recipeCategory.getImg());
         cv.put(COLUMN_CATEGORY, recipeCategory.getCategory());
 
         long result = db.insert(RECIPE_CATEGORY_TABLE, null, cv);
@@ -72,9 +75,10 @@ public class RecipeDatabaseHelper extends SQLiteOpenHelper {
         if (cursor.moveToFirst()) {
             do {
                 int categoryId = cursor.getInt(0);
-                String categoryName = cursor.getString(1);
+                int categoryImg = cursor.getInt(1);
+                String categoryName = cursor.getString(2);
 
-                RecipeCategory recipeCategory = new RecipeCategory(categoryId, categoryName);
+                RecipeCategory recipeCategory = new RecipeCategory(categoryId, categoryImg, categoryName);
                 categoryArrayList.add(recipeCategory);
             } while (cursor.moveToNext());
         } else {
@@ -105,6 +109,31 @@ public class RecipeDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    public ArrayList<Recipe> getAllRecipes(){
+        db = this.getReadableDatabase();
+        ArrayList<Recipe> recipeArray = new ArrayList<>();
+        String queryString = "SELECT * FROM " + RECIPE_TABLE;
+        Cursor cursor = db.rawQuery(queryString, null);
+
+        if (cursor.moveToFirst()) {
+            do {
+                int id = cursor.getInt(0);
+                String name = cursor.getString(1);
+                int img = cursor.getInt(2);
+                String ingredients = cursor.getString(3);
+                String instructions = cursor.getString(4);
+                int fk = cursor.getInt(5);
+
+                Recipe recipe = new Recipe(id, name, img, ingredients, instructions, fk);
+                recipeArray.add(recipe);
+            } while (cursor.moveToNext());
+        } else {
+            //do nothing
+        }
+        cursor.close();
+        db.close();
+        return recipeArray;
+    }
     public ArrayList<Recipe> getBreakfastRecipes(){
         db = this.getReadableDatabase();
         ArrayList<Recipe> recipeArray = new ArrayList<>();

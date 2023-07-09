@@ -1,9 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Recipe">
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recipe"
+    android:paddingTop="10dp"
+    android:paddingHorizontal="10dp"
+    android:paddingBottom="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/navlayout"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dzidzi"
+            android:textSize="27sp"
+            android:id="@+id/logo"
+            android:fontFamily="sans-serif"
+            android:layout_centerVertical="true"
+
+            />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:id="@+id/menu"
+            android:onClick="showRecipePopup"
+            android:src="@drawable/menu"
+            android:contentDescription="menu_icon"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CornPorridgeTitle"
+        android:layout_below="@+id/navlayout"
+        android:textSize="36sp"
+        android:lineHeight="44dp"
+        android:id="@+id/recipeName"
+        android:layout_marginBottom="22dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recipeName"
+        app:cardCornerRadius="8dp"
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/recipeCard"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:id="@+id/recipeImg"
+            android:src="@mipmap/corn_porridge_breakfast"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/recipeCard"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/ingred">
+
+        <!--            android:layout_paddingVertical="10dp"-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+
+            android:layout_marginBottom="5dp"
+            android:lineHeight="32dp"
+            android:textSize="24sp"
+            android:id="@+id/ingredtitle"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ingredtitle"
+            android:id="@+id/ingredients"
+            android:paddingVertical="0dp"
+            android:paddingLeft="10dp"
+            android:lineHeight="16dp"
+            android:textSize="14sp"
+            android:letterSpacing="0.004"
+            android:text="@string/CornPorridgeIngredients"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/ingred"
+        android:layout_marginBottom="22dp">
+
+<!--        android:layout_paddingVertical="10dp"-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+
+            android:layout_marginBottom="5dp"
+            android:lineHeight="32dp"
+            android:textSize="24sp"
+            android:id="@+id/instructitle"
+            />
+
+<!--        android:paddingVertical="0dp"-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/instructions"
+            android:layout_below="@+id/instructitle"
+            android:paddingStart="10dp"
+            android:lineHeight="16dp"
+            android:textSize="14sp"
+            android:letterSpacing="0.004"
+            android:text="@string/CornPorridgeInstructions"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+</ScrollView>
