@@ -43,7 +43,7 @@ Team members were assigned pages to implement.
    Derrick was responsible for the creation of the lunch, his partner was Martin. Apart from the lunch page, Derrick took it upon himself
    to achieve grammatical integrity by proofreading every single recipe added to the database.
 9. Yaw \
-   Yaw was assigned the heavy task of implementing the logic of the breakfast page. His role involved working with Jonathan to produce an
+   Yaw was assigned the heavy task of implementing the logic of the main page. His role involved working with Jonathan to produce an
    outstanding main page.
 11. Victoria \
     Victoria was responsible for the creation of the application's splash page and icon design. She masterfully made use of packages and the
